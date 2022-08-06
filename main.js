@@ -1,6 +1,6 @@
-var student={age:20}
-var addToThis=function(){
-    return this.age;
+let  multiple=function(x,y)
+{
+    console.log(x*y);
 }
-var bound=addToThis.bind(student);
-console.log(bound());
+let multiplebytwo=multiple.bind(this,2)
+multiplebytwo(6);
