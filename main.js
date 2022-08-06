@@ -1,8 +1,9 @@
-let  multiple=function(x,y)
+let  multiple=function(x)
 {
-    console.log(x*y);
+    return function(y){
+        console.log(x*y);
+   }
+   
 }
-let multiplebytwo=multiple.bind(this,2)
+let multiplebytwo=multiple(2)
 multiplebytwo(6);
-let multiplebythree=multiple.bind(this,3)
-multiplebytwo(8);
