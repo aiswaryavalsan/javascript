@@ -1,10 +1,4 @@
-setTimeout(function(){
-    console.log("hello")
-},10000)
-const x=function(y){
-    y();
-    console.log("x");
-}
-x(function y(){
-    console.log("y");
+let count=0;
+document.getElementById("button1").addEventListener("click",function(){
+console.log("button clicked",++count);
 })
